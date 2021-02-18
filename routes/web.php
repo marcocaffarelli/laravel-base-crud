@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PageController@home')->name('home');
+Route::get('blog', 'PageController@blog')->name('blog');
+Route::resource('posts', 'PostController');
