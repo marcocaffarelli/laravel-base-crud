@@ -10,4 +10,6 @@
         <textarea name="body" id="body" cols="30" rows="10" placeholder="inserisci il testo"></textarea>
     </div>
     <button type="submit">SUBMIT</button>
+    <!-- <a href="{{route('blog')}}"><button type="submit">SUBMIT</button></a> -->
+    
 </form>

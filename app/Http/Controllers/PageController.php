@@ -20,7 +20,8 @@ class PageController extends Controller
      * @return view blog
      */
     public function blog(){  
-        $posts = Post::all();    
+        //$posts = Post::all(); 
+        $posts = Post::latest()->get();   
         return view('blog', compact('posts'));
     }
 }
