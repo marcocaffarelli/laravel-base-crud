@@ -12,8 +12,11 @@
         <a href="{{route('posts.edit', ['post'=> $post->id])}}" style="background-color: yellow; color: black; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">
             Edit
         </a>
-        <a href="#" style="background-color: red; color: white; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">
-            Delete
-        </a>
+        <form action="#">
+            @csrf
+            @method('DELETE')
+            <button type="submit"style="background-color: red; color: white; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">Delete</button>
+        </form>
+
     </div>
 @endforeach
