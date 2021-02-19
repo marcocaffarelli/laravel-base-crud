@@ -6,7 +6,7 @@
         <p><strong>BODY: </strong>{{$post->body}}</p>
         <p><strong>CREATED: </strong>{{$post->created_at}}</p>
         <p><strong>UPDATED: </strong>{{$post->updated_at}}</p>
-        <a href="#" style="background-color: green; color: white; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">
+        <a href="{{route('posts.show', ['post'=> $post->id])}}" style="background-color: green; color: white; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">
             View
         </a>
         <a href="#" style="background-color: yellow; color: black; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">
