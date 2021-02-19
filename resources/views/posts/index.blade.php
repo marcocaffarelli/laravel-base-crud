@@ -9,7 +9,7 @@
         <a href="{{route('posts.show', ['post'=> $post->id])}}" style="background-color: green; color: white; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">
             View
         </a>
-        <a href="#" style="background-color: yellow; color: black; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">
+        <a href="{{route('posts.edit', ['post'=> $post->id])}}" style="background-color: yellow; color: black; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">
             Edit
         </a>
         <a href="#" style="background-color: red; color: white; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">

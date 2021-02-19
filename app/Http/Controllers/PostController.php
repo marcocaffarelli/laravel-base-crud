@@ -57,7 +57,7 @@ class PostController extends Controller
     public function show(Post $post)
     {
         //dd($post->title, $post->body);
-  
+
         return view('posts.show', compact('post'));
     }
 
@@ -67,9 +67,10 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        //
+        //dd($post);
+        return view('posts.edit', compact('post'));
     }
 
     /**
@@ -79,9 +80,12 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Post $post)
     {
-        //
+        $data = $request->all();
+        $post->update($data);
+
+        return redirect()->route('blog');
     }
 
     /**

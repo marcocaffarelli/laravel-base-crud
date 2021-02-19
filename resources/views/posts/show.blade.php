@@ -1,3 +1,4 @@
+@extends('layouts.head')
 <div style="border: 1px solid black; margin: 10px 0;">
     <h1>POST {{$post->id}}</h1>
     <h3><strong>TITOLO: </strong>{{$post->title}}</h3>
