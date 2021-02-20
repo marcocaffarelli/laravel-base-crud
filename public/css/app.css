@@ -25,7 +25,7 @@ h2 {
 
 a .btn {
   background-color: #9561e2;
-  color: gold;
+  color: #ffed4a;
 }
 
 .post {
@@ -43,6 +43,11 @@ a .btn {
 .post form button {
   height: 50px;
   width: 100px;
+}
+
+.show .btn {
+  background-color: #9561e2;
+  color: #ffed4a;
 }
 
 /*!
