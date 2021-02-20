@@ -1,21 +1,33 @@
 <h2>Prova</h2>
 <a href="{{route('posts.create')}}"><button style="background-color: yellow;">Crea un nuovo post</button></a>
 @foreach($posts as $post)
-    <div class="post" style="border: 1px solid black; margin: 10px 0; width: 500px; padding: 10px;">
-        <h3><strong>TITOLO: </strong>{{$post->title}}</h3>
-        <p><strong>BODY: </strong>{{$post->body}}</p>
-        <p><strong>CREATED: </strong>{{$post->created_at}}</p>
-        <p><strong>UPDATED: </strong>{{$post->updated_at}}</p>
-        <a href="{{route('posts.show', ['post'=> $post->id])}}" style="background-color: green; color: white; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">
-            View
-        </a>
-        <a href="{{route('posts.edit', ['post'=> $post->id])}}" style="background-color: yellow; color: black; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">
-            Edit
-        </a>
-        <form action="{{ route('posts.destroy', $post->id) }}" method="POST">
+    <div class="post row d-flex" style="border: 1px solid black; margin: 10px 0; padding: 10px;">
+        <div class="col-lg-2">
+            <h3><strong>TITOLO: </strong><br>{{$post->title}}</h3>
+        </div>
+        <div class="col-lg-5">
+            <p><strong>BODY: </strong><br>{{$post->body}}</p>
+        </div>
+        <div class="col">
+            <p><strong>CREATED: </strong><br>{{$post->created_at}}</p>
+        </div>
+        <div class="col">
+            <p><strong>UPDATED: </strong><br>{{$post->updated_at}}</p>        
+        </div>
+        <div>
+            <a href="{{route('posts.show', ['post'=> $post->id])}}" class="col btn bg-primary" style="height: 50px; width: 100px; margin-right: 15px;">
+                View
+            </a>
+        </div>
+        <div>
+            <a href="{{route('posts.edit', ['post'=> $post->id])}}" class="col btn bg-warning" style="height: 50px; width: 100px;">
+                Edit
+            </a>
+        </div>
+        <form action="{{ route('posts.destroy', $post->id) }}" class="col" method="POST">
             @csrf
             @method('DELETE')
-            <button type="submit"style="background-color: red; color: white; padding: 3px; margin: 5px; border: 1px solid black; border-radius: 5px;">Delete</button>
+            <button type="submit" class="btn bg-danger" style="height: 50px; width: 100px;">Delete</button>
         </form>
 
     </div>
