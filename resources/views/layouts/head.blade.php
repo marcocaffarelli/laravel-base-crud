@@ -6,21 +6,7 @@
 
         <title>Laravel-base-crud</title>
 
-        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-        <!-- Styles -->
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            .active{
-                color: red;
-            }
-            h1, nav{
-                text-align: center;
-            }
-        </style>
+
     </head>

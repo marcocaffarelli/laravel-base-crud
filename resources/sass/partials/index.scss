@@ -1,0 +1,27 @@
+h2{
+    color: $purple;
+}
+a{
+    .btn{
+        background-color: $purple;
+        color: gold;
+    }
+}
+.post{
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 10px 0;
+    div{
+        a{
+            height: 50px;
+            width: 100px;
+            margin-left: 15px   
+        }
+    }
+    form{
+        button{
+            height: 50px;
+            width: 100px;
+        }
+    }
+}

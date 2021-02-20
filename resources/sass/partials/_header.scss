@@ -1,0 +1,10 @@
+header{
+    h1{
+        text-align: center;
+    }
+    nav{
+        .active{
+            color: $red;
+        }
+    }
+}

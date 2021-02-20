@@ -1,5 +1,50 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+nav {
+  text-align: center;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header nav .active {
+  color: #e3342f;
+}
+
+h2 {
+  color: #9561e2;
+}
+
+a .btn {
+  background-color: #9561e2;
+  color: gold;
+}
+
+.post {
+  border: 1px solid black;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.post div a {
+  height: 50px;
+  width: 100px;
+  margin-left: 15px;
+}
+
+.post form button {
+  height: 50px;
+  width: 100px;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
